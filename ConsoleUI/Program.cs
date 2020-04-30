@@ -13,10 +13,10 @@ namespace ConsoleUI
         {
             Person bob = new Person();
             bob.FirstName = "Bob";
-            bob.LastName = "";
-            bob.BirthDate = DateTime.Now;
-            
+            bob.LastName = "Smith";
+            bob.MiddleInitial = "Z.";
 
+            Console.WriteLine(bob.FullName);
 
             Console.ReadLine();
         }

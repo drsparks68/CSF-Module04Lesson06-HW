@@ -12,11 +12,12 @@ namespace PersonModel
         public string LastName { get; set; }
         public string MiddleInitial { get; set; }
 
-        public int FullName
+        public string FullName
         {
             get
             {
-                return myVar;
+                string output = $"{ FirstName } { MiddleInitial } { LastName }";
+                return output;
             }
         }
 
